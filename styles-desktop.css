@@ -1,14 +1,9 @@
 html {
-	background-color: #F5F5F7;
+	background-color: rgba(251, 251, 253, 1.0);
 }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-.navbar {
-  background-color: transparent;
-  box-shadow: none;
 }
 
 .navbar-item {
@@ -180,4 +175,44 @@ body {
 
 .header-spacer {
 	height: 156px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(251, 251, 253, .5);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 2px 0px;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+  color: #333;
+}
+
+.top-spacer {
+	height: 48px;
 }

@@ -6,11 +6,6 @@ body {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.navbar {
-	background-color: transparent;
-	box-shadow: none;
-}
-
 .navbar-item {
 	color: #000;
 }
@@ -29,11 +24,6 @@ body {
 	margin-top: 45px;
 }
 
-.centered-icon {
-	position: relative;
-	text-align: center;
-}
-
 .overlay-path {
 	position: absolute;
 	top: 0;
@@ -44,7 +34,8 @@ body {
 }
 
 .centered-icon {
-		text-align: center;
+	position: relative;
+	text-align: center;
 }
 
 .centered-icon img {
@@ -52,7 +43,7 @@ body {
 	border-style: solid;
 	border-width: 0.5px;
 	border-color: #D2D2D7;
-	width: 82px;
+	width: 100px;
 }
 
 .huge-title {
@@ -175,4 +166,43 @@ body {
 
 .header-spacer {
 	height: 82px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(245, 245, 247, .5);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 2px 0px;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+/*  padding: 5px 10px;*/
+}
+
+nav a:hover {
+  background-color: #555;
+  color: #333;
+}
+
+.top-spacer {
+	height: 20px;
 }
